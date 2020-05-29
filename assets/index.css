@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bar {
+  display: flex;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.801218);
+  padding: 1rem 3rem;
+  position: fixed;
+  width: 100%;
+}
+.bar .image {
+  background-image: url("file:///C:/Users/magali/Downloads/Bitmap.png");
+  width: 8rem;
+  height: 2rem;
+  background-size: cover;
+  margin-right: 2rem;
+}
+.bar .bar-words {
+  font-size: 1.2rem;
+}
+.bar .bar-words .word {
+  margin-right: 1rem;
+}
+
+.cover-page {
+  background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
+  background-size: cover;
+  height: 53rem;
+  width: 100%;
+}
+.cover-page .page {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.cover-page .page .text {
+  display: flex;
+  display: inline-block;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #FFFFFF;
+  width: 50%;
+}
+.cover-page .page .text .original {
+  display: inline-block;
+  margin-top: 9rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.cover-page .page .text .title {
+  font-size: 7.5rem;
+}
+.cover-page .page .text .buttons {
+  display: inline-block;
+  display: flex;
+}
+.cover-page .page .text .buttons .button {
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  padding: 1rem;
+  margin-right: 1rem;
+  width: 10rem;
+  text-align: center;
+}
+.cover-page .page .text .look {
+  display: inline-block;
+  margin: 0.5rem 0rem;
+  font-weight: normal;
+}
+.cover-page .page .text .description {
+  font-weight: normal;
+}
+.cover-page .page .wrap .series {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+.cover-page .page .wrap .selector {
+  display: flex;
+  overflow-x: hidden;
+  margin-bottom: 3.5rem;
+}
+.cover-page .page .wrap .selector .img {
+  margin-right: 1rem;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0rem;
+  background-color: black;
+}
+.body .main {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=index.css.map */

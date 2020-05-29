@@ -1,0 +1,102 @@
+
+
+.cover-page{
+    background-image:url("file://magui/Users/magali/tp-courseit/img/portada.png");
+    background-size:cover;
+    height: 53rem;
+    width: 100%;
+    
+    .page{
+        margin-left:4rem;
+        display:flex;
+        flex-direction: column;
+        
+        .text{
+        display:flex;
+        display:inline-block;
+        margin-top:5rem;
+        margin-bottom: 2rem;
+        text-align:left;
+        color: #FFFFFF;
+        
+        width:50%;
+
+        .original{
+            display:inline-block;
+            margin-top: 9rem;
+            font-weight:bold;
+            font-size:1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .title{
+            font-size:7.5rem;
+        }
+
+        .buttons{
+          display:inline-block;  
+          display:flex;
+          
+            .button{
+                background: rgba(157, 151, 151, 0.541521);
+                border-radius: 9px;
+                font-size:1.3rem;
+                font-weight: normal;
+                padding:1rem;
+                margin-right:1rem;
+                width:10rem;
+                text-align:center;
+                .play{
+                    
+                }
+
+                .list{
+
+                }
+            }
+
+        }
+
+        .look{
+            display:inline-block;
+            margin: 0.5rem 0rem;
+            font-weight: normal;
+        }
+
+        .description{
+            font-weight: normal;
+
+        }
+
+        }
+
+        .wrap{
+            
+
+            .series{
+                display:inline-block;
+                font-family: 'Open Sans', sans-serif;
+                font-weight:bold;
+                font-size: 1.2rem;
+                color: #FFFFFF;
+                margin-bottom:1rem;
+        
+            }
+        
+            .selector{
+                display:flex;
+                overflow-x:hidden;
+                margin-bottom:3.5rem;
+                .img{
+                    margin-right:1rem;
+                }
+            }
+        }
+
+
+
+    }
+
+        
+    
+
+}
