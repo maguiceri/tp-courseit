@@ -2,6 +2,7 @@
 @import"modules/bar";
 @import"modules/cover-page";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
 
 
@@ -11,7 +12,9 @@
 }
 
 
+.html{
 
+    scroll-behavior: smooth;
 .body{
     margin:0rem;
     background-color:black;
@@ -20,12 +23,11 @@
 
     font-family: 'Open Sans', sans-serif;
     font-weight:bold;
-    font-size: 1.2rem;
     color: #FFFFFF;
-    
-
-      
+     
     }
     
+
+}
 
 }

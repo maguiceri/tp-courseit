@@ -51,26 +51,89 @@ table {
 
 .bar {
   display: flex;
-  height: 4rem;
+  min-height: 4rem;
   background: rgba(0, 0, 0, 0.801218);
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   position: fixed;
   width: 100%;
+  white-space: nowrap;
+  z-index: 20;
 }
 .bar .image {
   background-image: url("file:///C:/Users/magali/Downloads/Bitmap.png");
-  width: 8rem;
-  height: 2rem;
+  min-width: 8rem;
+  max-height: 2rem;
   background-size: cover;
   margin-right: 2rem;
+}
+.bar .image .logo {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+}
+.bar .image .logo:hover {
+  background-color: white;
 }
 .bar .bar-words {
   font-size: 1.2rem;
 }
-.bar .bar-words .word {
+.bar .bar-words ul {
+  display: flex;
+}
+.bar .bar-words ul .word {
+  display: inline-block;
   margin-right: 1rem;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.bar .bar-words ul .word:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
+.box .wrap .series {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.box .wrap .selector {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 3.5rem;
+}
+.box .wrap .selector::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.box .wrap .selector .img {
+  scroll-snap-align: start;
+  margin-right: 1rem;
+}
+.box .wrapper .serie {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.box .wrapper .sel {
+  display: flex;
+  margin-bottom: 3.5rem;
+}
+.box .wrapper .sel .selec {
+  display: flex;
+  flex-direction: column;
+}
+.box .wrapper .sel .selec .bar {
+  width: 100px;
+  height: 10px;
+  background-color: red;
+}
 .cover-page {
   background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
   background-size: cover;
@@ -78,6 +141,7 @@ table {
   width: 100%;
 }
 .cover-page .page {
+  text-decoration: none;
   margin-left: 4rem;
   display: flex;
   flex-direction: column;
@@ -89,7 +153,7 @@ table {
   margin-bottom: 2rem;
   text-align: left;
   color: #FFFFFF;
-  width: 50%;
+  max-width: 50%;
 }
 .cover-page .page .text .original {
   display: inline-block;
@@ -100,6 +164,7 @@ table {
 }
 .cover-page .page .text .title {
   font-size: 7.5rem;
+  text-decoration: none;
 }
 .cover-page .page .text .buttons {
   display: inline-block;
@@ -123,35 +188,21 @@ table {
 .cover-page .page .text .description {
   font-weight: normal;
 }
-.cover-page .page .wrap .series {
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #FFFFFF;
-  margin-bottom: 1rem;
-}
-.cover-page .page .wrap .selector {
-  display: flex;
-  overflow-x: hidden;
-  margin-bottom: 3.5rem;
-}
-.cover-page .page .wrap .selector .img {
-  margin-right: 1rem;
-}
 
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
-.body {
+.html {
+  scroll-behavior: smooth;
+}
+.html .body {
   margin: 0rem;
   background-color: black;
 }
-.body .main {
+.html .body .main {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
   color: #FFFFFF;
 }
 

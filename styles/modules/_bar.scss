@@ -4,27 +4,51 @@
 
 .bar{
     display:flex;
-    height: 4rem;
+    min-height: 4rem;
     background: rgba(0, 0, 0, 0.801218);
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
     position:fixed;
     width:100%;
-
-
+    white-space:nowrap;
+    z-index:20;
     .image{
     background-image:url("file:///C:/Users/magali/Downloads/Bitmap.png");
-    width: 8rem;
-    height: 2rem;
+    min-width: 8rem;
+    max-height: 2rem;
     background-size: cover;
     margin-right:2rem;
-    
-    
+
+         .logo{
+            display:inline-block;
+            padding: 1rem;
+            text-decoration:none;
+
+            &:hover{
+                background-color:white;
+            }
+         }
     }
     .bar-words{
         font-size: 1.2rem;
-        
-        .word{
-            margin-right:1rem;
+
+        ul{
+            display:flex;
+
+            .word{
+                display:inline-block;
+                margin-right:1rem;
+                padding: 1rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight:bold;
+                color: #FFFFFF;
+                text-decoration:none;
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+                
+            }
+
         }
 
     }

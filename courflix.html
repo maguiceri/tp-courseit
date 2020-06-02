@@ -1,7 +1,9 @@
-<html>
+<html class="html">
     <head>
         <title>courflix</title>
+        
         <link rel="stylesheet" href="./assets/index.css">
+        
         
     </head>
 
@@ -9,22 +11,21 @@
 
         <div class="main">
 
-            <div class="bar">
-                <div class="image">
-                </div>
-                <div class="bar-words">
-                    <span class="word">Inicio</span>
-                    <span class="word">Series</span>
-                    <span class="word">Peliculas</span>
-                    <span class="word">Agregados recientes</span>
-                    <span class="word">Mi lista</span>
-                </div>   
-            </div >
+            <header class="bar">
+                <div class="image"><a class="logo" href="#"></a></div>
+                <nav class="bar-words">
+                    <ul>
+                        <li class="link-wrapper"><a class="word" href="#cover">Inicio</a></li>
+                        <li class="link-wrapper"><a class="word" href="#s">Series</a></li>
+                        <li class="link-wrapper"><a class="word" href="#">Peliculas</a></li>
+                        <li class="link-wrapper"><a class="word" href="#add">Agregados recientemente</a></li>
+                        <li class="link-wrapper"><a class="word" href="#">Mi lista</a></li>
+                    </ul>
+                </nav>   
+            </header >
 
-            <div class="cover-page">
-
-                <a class="page" href="detalle.html">
-                    
+            <div class="cover-page" id="cover">
+                <div class="page"> 
                     <div class="text">   
                         <span class="original">Original de COURFLIX</span>
                         <p class="title">BLACK SUMMER</p>
@@ -38,44 +39,76 @@
                         </div>
                         <span class="look">Ve la temporada 1</span>
                         <p class="description">Una ansiada luna de miel. Un asesinato terrible.Varios sospechosos. Si sobreviven seran unas vacaiones de ensueno</p>
-                    </div > 
+                    </div >
                     
-                    <div class="wrap">
-                        <span class="series">Series</span>
-                        <div class="selector">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/theSeven.png" alt="theEleven">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="lucifer">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/theProtector.jpg" alt="theProtector">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/robot.jpg" alt="robot">
-                        </div>
-                    </div>
+                
 
-                    <div class="wrap">
-                        <span class="series">Seguir viendo contenido del tucu</span>
-                        <div class="selector">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/vikingos.jpg" alt="vikingos">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/dark.jpg" alt="dark">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/laOrdenSecreta.jpg" alt="laOrdenSecreta">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/theEndOfThe.jpg" alt="theEndOfThe">
-                        </div>
-                    </div>
+                    <div class="box">
+                    
+                            <div class="wrap">
 
-                    <div class="wrap">
-                        <span class="series">Agregados recientemente</span>
-                        <div class="selector">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/arrow.jpg" alt="arrow">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="flash">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/theProtector.jpg" alt="theEleven">
-                        <img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="lucifer">
-                        </div>
+                                <span class="series" id="s">Series</span>
+
+                                <div class="selector dragscroll" >
+                                        <div class="serie"><img class="img" src="file://magui/Users/magali/tp-courseit/img/theSeven.png" alt="theEleven"></div>
+                                        <div class="serie"><img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="lucifer"></div>
+                                        <div class="serie"><img class="img" src="file://magui/Users/magali/tp-courseit/img/theProtector.jpg" alt="theProtector"></div>
+                                        <div class="serie"><img class="img" src="file://magui/Users/magali/tp-courseit/img/robot.jpg" alt="robot"></div>
+                                </div>
+
+                            </div>
+
+                    
+
+                            <div class="wrapper">
+
+                                <span class="serie">Seguir viendo contenido del tucu</span>
+                                <div class="sel">
+                                    <div class="selec">
+                                        <div class="i"><img class="im" src="file://magui/Users/magali/tp-courseit/img/vikingos.jpg" alt="vikingos"></div>
+                                        <div class="bar"><div class="red"></div></div>
+                                    </div>
+                                    <div class="selec">
+                                       <img class="im" src="file://magui/Users/magali/tp-courseit/img/dark.jpg" alt="dark">
+                                        <div class="bar"><div class="red"></div></div>
+                                    </div>
+                                    <div class="selec">
+                                        <img class="im" src="file://magui/Users/magali/tp-courseit/img/laOrdenSecreta.jpg" alt="laOrdenSecreta">
+                                        <div class="bar"><div class="red"></div></div>
+                                    </div>
+                                    <div class="selec">
+                                        <img class="im" src="file://magui/Users/magali/tp-courseit/img/theEndOfThe.jpg" alt="theEndOfThe">
+                                        <div class="bar"><div class="red"></div></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="wrap">
+
+                                <span class="series" id="add">Agregados recientemente</span>
+
+                                <div class="selector dragscroll" >
+                                    <img class="img" src="file://magui/Users/magali/tp-courseit/img/arrow.jpg" alt="arrow">
+                                    <img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="flash">
+                                    <img class="img" src="file://magui/Users/magali/tp-courseit/img/theProtector.jpg" alt="theEleven">
+                                    <img class="img" src="file://magui/Users/magali/tp-courseit/img/lucifer.jpg" alt="lucifer">
+                                </div>
+
+                            </div>
+
                     </div>
                 
-                </a>
+                </div>
+                
+                
 
             </div>
 
 
         </div>
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
 
     </body>
 
