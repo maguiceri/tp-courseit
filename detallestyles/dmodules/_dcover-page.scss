@@ -1,82 +1,54 @@
-@import "dbox";
 
 .cover-page{
-    background-image:url("file://magui/Users/magali/tp-courseit/img/portada.png");
+    background-image:url("file://magui/Users/magali/tp-courseit/img/breakingbad04.png");
     background-size:cover;
     height: 53rem;
     width: 100%;
     
     
     .page{
-       
         text-decoration: none;
         margin-left:4rem;
         display:flex;
         flex-direction: column;
-        
-                .text{
-                    display:flex;
+
+        .im{
+            width: 21.56rem;
+            height: 21.56rem;
+        }
+
+        .box{
+           
+            .wrap{
+                
+                .series{
                     display:inline-block;
-                    margin-top:5rem;
-                    margin-bottom: 2rem;
-                    text-align:left;
-                    color: #FFFFFF;
-                    max-width:50%;
-
-                        .original{
-                            display:inline-block;
-                            margin-top: 9rem;
-                            font-weight:bold;
-                            font-size:1.5rem;
-                            margin-bottom: 0.5rem;
-                        }
-                        .title{
-                            font-size:7.5rem;
-                            text-decoration: none;
-                        }
-
-                        .buttons{
-                            display:inline-block;  
-                            display:flex;
-                            color:white;
-                        
-                            .button{
-                                background: rgba(157, 151, 151, 0.541521);
-                                border-radius: 9px;
-                                font-size:1.3rem;
-                                font-weight: normal;
-                                padding:1rem; 
-                                margin-right:1rem;
-                                width:10rem;
-                                text-align:center;
-                                
-                                .play{
-                            
-                                }
-
-
-                                .list{
-                                    text-decoration: none;
-                                }
-                                
-                         
-                            }
-
-                        }
-
-                        .look{
-                            display: inline-block;
-                            margin: 0.5rem 0rem;
-                            font-weight: normal;
-                        }
-
-                        .description{
-                            font-weight: normal;
-
-                        }
-
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight:bold;
+                    font-size: 1.5rem;
+                    margin-bottom:1rem;
+            
                 }
-
+                .selector{
+                    display:flex;
+                    overflow-x:auto;
+                    scroll-snap-type: x mandatory;
+                    margin-bottom:3.5rem;
+        
+                    &::-webkit-scrollbar{ 
+                    width: 0; 
+                    display:none;}
+                    
+                    .img{
+                        scroll-snap-align:start;
+                        margin-right:1rem;
+                        
+                    }
+                }
+           
+             
+            }
+        }
               
     }
 

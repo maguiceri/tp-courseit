@@ -65,7 +65,7 @@ table {
   background-size: cover;
   margin-right: 2rem;
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 4rem;
 }
 .bar .image .logo {
   display: inline-block;
@@ -94,30 +94,8 @@ table {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.box .wrap .series {
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.box .wrap .selector {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 3.5rem;
-}
-.box .wrap .selector::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-.box .wrap .selector .img {
-  scroll-snap-align: start;
-  margin-right: 1rem;
-}
-
 .cover-page {
-  background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
+  background-image: url("file://magui/Users/magali/tp-courseit/img/breakingbad04.png");
   background-size: cover;
   height: 53rem;
   width: 100%;
@@ -128,51 +106,30 @@ table {
   display: flex;
   flex-direction: column;
 }
-.cover-page .page .text {
-  display: flex;
-  display: inline-block;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-  text-align: left;
-  color: #FFFFFF;
-  max-width: 50%;
+.cover-page .page .im {
+  width: 21.56rem;
+  height: 21.56rem;
 }
-.cover-page .page .text .original {
+.cover-page .page .box .wrap .series {
   display: inline-block;
-  margin-top: 9rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-.cover-page .page .text .title {
-  font-size: 7.5rem;
-  text-decoration: none;
-}
-.cover-page .page .text .buttons {
-  display: inline-block;
+.cover-page .page .box .wrap .selector {
   display: flex;
-  color: white;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 3.5rem;
 }
-.cover-page .page .text .buttons .button {
-  background: rgba(157, 151, 151, 0.541521);
-  border-radius: 9px;
-  font-size: 1.3rem;
-  font-weight: normal;
-  padding: 1rem;
+.cover-page .page .box .wrap .selector::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.cover-page .page .box .wrap .selector .img {
+  scroll-snap-align: start;
   margin-right: 1rem;
-  width: 10rem;
-  text-align: center;
-}
-.cover-page .page .text .buttons .button .list {
-  text-decoration: none;
-}
-.cover-page .page .text .look {
-  display: inline-block;
-  margin: 0.5rem 0rem;
-  font-weight: normal;
-}
-.cover-page .page .text .description {
-  font-weight: normal;
 }
 
 *, *:after, *:before {
@@ -184,13 +141,12 @@ table {
 }
 .html .body {
   margin: 0rem;
-  background-color: #833939;
+  background-color: black;
 }
 .html .body .main {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
-  background-color: red;
 }
 
 /*# sourceMappingURL=detalleindex.css.map */
