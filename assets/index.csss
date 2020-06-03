@@ -64,8 +64,6 @@ table {
   max-height: 2rem;
   background-size: cover;
   margin-right: 2rem;
-  margin-top: 1rem;
-  margin-left: 4rem;
 }
 .bar .image .logo {
   display: inline-block;
@@ -77,8 +75,6 @@ table {
 }
 .bar .bar-words {
   font-size: 1.2rem;
-  text-align: center;
-  margin-top: 1.4rem;
 }
 .bar .bar-words ul {
   display: flex;
@@ -86,6 +82,7 @@ table {
 .bar .bar-words ul .word {
   display: inline-block;
   margin-right: 1rem;
+  padding: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
@@ -212,4 +209,4 @@ table {
   color: #FFFFFF;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.csss.map */

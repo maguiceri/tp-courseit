@@ -65,7 +65,7 @@ table {
   background-size: cover;
   margin-right: 2rem;
   margin-top: 1rem;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 .bar .image .logo {
   display: inline-block;
@@ -77,8 +77,6 @@ table {
 }
 .bar .bar-words {
   font-size: 1.2rem;
-  text-align: center;
-  margin-top: 1.4rem;
 }
 .bar .bar-words ul {
   display: flex;
@@ -86,6 +84,7 @@ table {
 .bar .bar-words ul .word {
   display: inline-block;
   margin-right: 1rem;
+  margin-top: 1.4rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
@@ -116,26 +115,7 @@ table {
   scroll-snap-align: start;
   margin-right: 1rem;
 }
-.box .wrapper .serie {
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.box .wrapper .sel {
-  display: flex;
-  margin-bottom: 3.5rem;
-}
-.box .wrapper .sel .selec {
-  display: flex;
-  flex-direction: column;
-}
-.box .wrapper .sel .selec .bar {
-  width: 100px;
-  height: 10px;
-  background-color: red;
-}
+
 .cover-page {
   background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
   background-size: cover;
@@ -204,12 +184,13 @@ table {
 }
 .html .body {
   margin: 0rem;
-  background-color: black;
+  background-color: #833939;
 }
 .html .body .main {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
+  background-color: red;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=detalleindex.css.map */

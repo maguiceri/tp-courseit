@@ -1,0 +1,35 @@
+@import"dbase/dreset";
+@import"dmodules/dbar";
+@import"dmodules/dcover-page";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
+
+
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+
+.html{
+    scroll-behavior: smooth;
+
+    .body{
+        margin:0rem;
+        background-color:rgb(131, 57, 57);
+        
+        .main{
+
+        font-family: 'Open Sans', sans-serif;
+        font-weight:bold;
+        color: #FFFFFF;
+        background-color: red;
+        
+        }
+        
+
+    }
+
+}
