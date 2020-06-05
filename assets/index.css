@@ -58,33 +58,39 @@ table {
   white-space: nowrap;
   z-index: 20;
 }
-.bar .image {
-  background-image: url("file:///C:/Users/magali/Downloads/Bitmap.png");
+.bar .hamburguesa {
+  display: none;
+}
+.bar .logo {
   min-width: 8rem;
   max-height: 2rem;
-  background-size: cover;
-  margin-right: 2rem;
-  margin-top: 1rem;
   margin-left: 4rem;
-}
-.bar .image .logo {
+  margin-top: 1rem;
+  margin-right: 2rem;
   display: inline-block;
-  padding: 1rem;
   text-decoration: none;
 }
-.bar .image .logo:hover {
-  background-color: white;
+.bar .logo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  .bar .hamburguesa {
+    margin-left: 1rem;
+    display: flex;
+    width: 35px;
+  }
+  .bar .logo {
+    margin-left: 1.3rem;
+  }
 }
 .bar .bar-words {
   font-size: 1.2rem;
-  text-align: center;
   margin-top: 1.4rem;
 }
 .bar .bar-words ul {
   display: flex;
 }
 .bar .bar-words ul .word {
-  display: inline-block;
   margin-right: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -94,6 +100,11 @@ table {
 .bar .bar-words ul .word:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 600px) {
+  .bar .bar-words {
+    display: none;
+  }
+}
 
 .box .wrap .series {
   display: inline-block;
@@ -102,19 +113,19 @@ table {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 600px) {
+  .box .wrap .series {
+    font-size: 18px;
+  }
+}
 .box .wrap .selector {
-  display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  margin-bottom: 3.5rem;
+  margin-right: -2rem;
+  overflow-x: auto;
 }
 .box .wrap .selector::-webkit-scrollbar {
   width: 0;
   display: none;
-}
-.box .wrap .selector .img {
-  scroll-snap-align: start;
-  margin-right: 1rem;
 }
 .box .wrapper .serie {
   display: inline-block;
@@ -126,21 +137,44 @@ table {
 .box .wrapper .sel {
   display: flex;
   margin-bottom: 3.5rem;
+  overflow-x: auto;
+}
+.box .wrapper .sel::-webkit-scrollbar {
+  width: 0;
+  display: none;
 }
 .box .wrapper .sel .selec {
   display: flex;
   flex-direction: column;
 }
-.box .wrapper .sel .selec .bar {
-  width: 100px;
-  height: 10px;
-  background-color: red;
+.box .wrapper .sel .selec .im {
+  margin-right: 1rem;
 }
+.box .wrapper .sel .selec .bar {
+  position: relative;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 0.3rem;
+  background-color: grey;
+}
+.box .wrapper .sel .selec .bar .red {
+  background-color: red;
+  height: 100%;
+}
+
 .cover-page {
   background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
   background-size: cover;
   height: 53rem;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .cover-page .cover-page {
+    background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
+    background-size: cover;
+    height: 344px;
+    width: 100%;
+  }
 }
 .cover-page .page {
   text-decoration: none;
@@ -148,12 +182,17 @@ table {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 600px) {
+  .cover-page .page .cover-page {
+    margin-left: 0.2rem;
+  }
+}
 .cover-page .page .text {
   display: flex;
   display: inline-block;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: start;
   color: #FFFFFF;
   max-width: 50%;
 }
@@ -164,35 +203,105 @@ table {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 600px) {
+  .cover-page .page .text .original {
+    display: none;
+  }
+}
 .cover-page .page .text .title {
   font-size: 7.5rem;
   text-decoration: none;
 }
+@media (max-width: 600px) {
+  .cover-page .page .text .title {
+    font-size: 24px;
+  }
+}
+.cover-page .page .text .sub-title-mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .cover-page .page .text .sub-title-mobile {
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    font-size: 16px;
+  }
+}
 .cover-page .page .text .buttons {
   display: inline-block;
   display: flex;
-  color: white;
 }
-.cover-page .page .text .buttons .button {
+.cover-page .page .text .buttons .play {
+  color: white;
+  font-size: 21px;
   background: rgba(157, 151, 151, 0.541521);
+  border: none;
   border-radius: 9px;
-  font-size: 1.3rem;
-  font-weight: normal;
   padding: 1rem;
+  font-weight: normal;
   margin-right: 1rem;
   width: 10rem;
   text-align: center;
 }
-.cover-page .page .text .buttons .button .list {
+.cover-page .page .text .buttons .list {
   text-decoration: none;
-}
-.cover-page .page .text .look {
-  display: inline-block;
-  margin: 0.5rem 0rem;
+  color: white;
+  font-size: 21px;
+  background: rgba(157, 151, 151, 0.541521);
+  border: none;
+  border-radius: 9px;
+  padding: 1rem;
   font-weight: normal;
+  margin-right: 1rem;
+  width: 10rem;
+  text-align: center;
 }
-.cover-page .page .text .description {
-  font-weight: normal;
+@media (max-width: 600px) {
+  .cover-page .page .text .buttons .play {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #ED0A1D;
+    border-radius: 3px;
+    margin-right: 0.3rem;
+    width: 131px;
+    border: none;
+  }
+  .cover-page .page .text .buttons .list {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: rgba(157, 151, 151, 0.541521);
+    border-radius: 3px;
+    width: 131px;
+    text-align: center;
+  }
+  .cover-page .page .text .look {
+    display: inline-block;
+    margin: 0.5rem 0rem;
+    font-weight: normal;
+  }
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .cover-page .page .text .look {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .cover-page .page .text .description {
+    font-weight: normal;
+  }
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .cover-page .page .text .description {
+    display: none;
+  }
 }
 
 *, *:after, *:before {
