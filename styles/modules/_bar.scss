@@ -1,7 +1,3 @@
-
-
-
-
 .bar{
     display:flex;
     min-height: 4rem;
@@ -10,44 +6,37 @@
     width:100%;
     white-space:nowrap;
     z-index:20;
-
     .hamburguesa{
         display:none;
     }
-    
     .logo{
-
-    min-width: 8rem;
-    max-height: 2rem;
-    margin-left:4rem; 
-    margin-top: 1rem;
-    margin-right: 2rem;
-    display:inline-block;
-    text-decoration:none;
-
-            &:hover{
-                background-color: rgba(0, 0, 0, 0.2);
+        min-width: 8rem;
+        max-height: 2rem;
+        margin-left:4rem; 
+        margin-top: 1rem;
+        margin-right: 2rem;
+        display:inline-block;
+        text-decoration:none;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+        @media (max-width: 600px) {
+            .hamburguesa{
+                margin-left: 1rem;
+                display:flex;
+                width: 35px;
             }
-
-    }
-    
-    @media (max-width: 600px) {
-        .hamburguesa{
-            margin-left: 1rem;
-            display:flex;
-            width: 35px;
-        }
-        .logo{
-            margin-left: 1.3rem;
+            .logo{
+                margin-left: 1.3rem;
+            }
         }
 
-    }
     .bar-words{
         font-size: 1.2rem;
         margin-top: 1.4rem;
-        ul{
-        display:flex;
-            
+        .words{
+            display:flex; 
             .word{
                 margin-right:1rem;
                 font-family: 'Open Sans', sans-serif;
@@ -56,22 +45,16 @@
                 text-decoration:none;
                 &:hover{
                     background-color: rgba(0, 0, 0, 0.2);
-                }
-                
+                }  
+            }
+        }
+    }
+        @media (max-width: 600px) {
+            .bar-words{
+                display:none;
             }
 
         }
-
-    }
-
-    @media (max-width: 600px) {
-        .bar-words{
-            display:none;
-        }
-
-    }
-
-
 
 }
 

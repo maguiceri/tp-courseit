@@ -5,31 +5,23 @@
     position:fixed;
     width:100%;
     white-space:nowrap;
-    z-index:20;
-    
+    z-index:20; 
     .logo{
-
         min-width: 8rem;
         max-height: 2rem;
         margin-left:4rem; 
         margin-top: 1rem;
         margin-right: 2rem;
         display:inline-block;
-        
-                text-decoration:none;
-    
-                &:hover{
-                    background-color: rgba(0, 0, 0, 0.2);
-                }
-
-    }
-    
+        text-decoration:none;
+        &:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+        }
+    } 
     .bar-words{
         font-size: 1.2rem;
-
-        ul{
+        .words{
             display:flex;
-
             .word{
                 display:inline-block;
                 margin-right:1rem;
@@ -38,17 +30,10 @@
                 font-weight:bold;
                 color: #FFFFFF;
                 text-decoration:none;
-
                 &:hover{
                     background-color: rgba(0, 0, 0, 0.2);
-                }
-                
+                }  
             }
-
         }
-
     }
-
-
-
 }

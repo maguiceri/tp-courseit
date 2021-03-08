@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -87,17 +87,17 @@ table {
   font-size: 1.2rem;
   margin-top: 1.4rem;
 }
-.bar .bar-words ul {
+.bar .bar-words .words {
   display: flex;
 }
-.bar .bar-words ul .word {
+.bar .bar-words .words .word {
   margin-right: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
   text-decoration: none;
 }
-.bar .bar-words ul .word:hover {
+.bar .bar-words .words .word:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 600px) {
@@ -108,8 +108,7 @@ table {
 
 .box .wrap .series {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -119,58 +118,47 @@ table {
   }
 }
 .box .wrap .selector {
+  display: flex;
   overflow-x: auto;
-  margin-right: -2rem;
-  overflow-x: auto;
-}
-.box .wrap .selector::-webkit-scrollbar {
-  width: 0;
-  display: none;
 }
 .box .wrapper .serie {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .box .wrapper .sel {
   display: flex;
-  margin-bottom: 3.5rem;
   overflow-x: auto;
-}
-.box .wrapper .sel::-webkit-scrollbar {
-  width: 0;
-  display: none;
 }
 .box .wrapper .sel .selec {
   display: flex;
   flex-direction: column;
 }
-.box .wrapper .sel .selec .im {
-  margin-right: 1rem;
-}
-.box .wrapper .sel .selec .bar {
-  position: relative;
+.box .wrapper .sel .selec .porcentage {
+  margin: 0 auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 15rem;
-  height: 0.3rem;
-  background-color: grey;
+  height: 0.5rem;
+  background-color: gray;
 }
-.box .wrapper .sel .selec .bar .red {
+.box .wrapper .sel .selec .porcentage .red {
+  width: 15rem;
+  height: 0.5rem;
   background-color: red;
-  height: 100%;
 }
 
 .cover-page {
-  background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
+  background-image: url("/img/portaD.png");
   background-size: cover;
   height: 53rem;
   width: 100%;
 }
 @media (max-width: 600px) {
   .cover-page .cover-page {
-    background-image: url("file://magui/Users/magali/tp-courseit/img/portada.png");
+    background-image: url("/img/portada.jpg");
     background-size: cover;
     height: 344px;
     width: 100%;
@@ -194,12 +182,13 @@ table {
   margin-bottom: 2rem;
   text-align: start;
   color: #FFFFFF;
+  width: 100%;
   max-width: 50%;
 }
 .cover-page .page .text .original {
   display: inline-block;
   margin-top: 9rem;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -211,6 +200,8 @@ table {
 .cover-page .page .text .title {
   font-size: 7.5rem;
   text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 @media (max-width: 600px) {
   .cover-page .page .text .title {
@@ -231,6 +222,8 @@ table {
 .cover-page .page .text .buttons {
   display: inline-block;
   display: flex;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 .cover-page .page .text .buttons .play {
   color: white;
@@ -239,7 +232,6 @@ table {
   border: none;
   border-radius: 9px;
   padding: 1rem;
-  font-weight: normal;
   margin-right: 1rem;
   width: 10rem;
   text-align: center;
@@ -249,11 +241,8 @@ table {
   color: white;
   font-size: 21px;
   background: rgba(157, 151, 151, 0.541521);
-  border: none;
   border-radius: 9px;
   padding: 1rem;
-  font-weight: normal;
-  margin-right: 1rem;
   width: 10rem;
   text-align: center;
 }
@@ -282,23 +271,21 @@ table {
     width: 131px;
     text-align: center;
   }
-  .cover-page .page .text .look {
-    display: inline-block;
-    margin: 0.5rem 0rem;
-    font-weight: normal;
-  }
 }
-@media (max-width: 600px) and (max-width: 600px) {
+.cover-page .page .text .look {
+  display: inline-block;
+  margin: 0.5rem 0rem;
+  font-weight: normal;
+}
+@media (max-width: 600px) {
   .cover-page .page .text .look {
     display: none;
   }
 }
-@media (max-width: 600px) {
-  .cover-page .page .text .description {
-    font-weight: normal;
-  }
+.cover-page .page .text .description {
+  font-weight: normal;
 }
-@media (max-width: 600px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .cover-page .page .text .description {
     display: none;
   }
@@ -317,7 +304,6 @@ table {
 }
 .html .body .main {
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
   color: #FFFFFF;
 }
 

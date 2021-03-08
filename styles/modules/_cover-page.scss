@@ -1,187 +1,146 @@
 @import "box";
 
 .cover-page{
-    background-image:url("file://magui/Users/magali/tp-courseit/img/portada.png");
+    background-image:url("/img/portaD.png");
     background-size:cover;
     height: 53rem;
     width: 100%;
-
     @media (max-width: 600px) {
         .cover-page{
-            background-image:url("file://magui/Users/magali/tp-courseit/img/portada.png");
+            background-image:url("/img/portada.jpg");
             background-size:cover;
             height: 344px;
-            width: 100%;
-            
-        }
-      
-    }
-    
+            width: 100%;          
+        } 
+    }  
     .page{
-       
         text-decoration: none;
         margin-left:4rem;
         display:flex;
         flex-direction: column;
-
-
         @media (max-width: 600px) {
             .cover-page{
                 margin-left:0.2rem; 
-            }
-          
+            } 
         }
-        
-                .text{
-                    display:flex;
-                    display:inline-block;
-                    margin-top:5rem;
-                    margin-bottom: 2rem;
-                    text-align:start;
-                    color: #FFFFFF;
-                    max-width:50%;
-
-                        .original{
-                            display:inline-block;
-                            margin-top: 9rem;
-                            font-weight:bold;
-                            font-size:1.5rem;
-                            margin-bottom: 0.5rem;
-                        }
-                        @media (max-width: 600px) {
-                            .original{
-                                display:none;
-                            }
-                          
-                        }
-                        .title{
-                            font-size:7.5rem;
-                            text-decoration: none;
-                        }
-                        @media (max-width: 600px) {
-                            .title{
-                                font-size: 24px;
-                            }
-                          
-                        }
-
-                        .sub-title-mobile{
-                            display:none;
-                        
-                        }
-                            @media (max-width: 600px) {
-                                    .sub-title-mobile{
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        display:flex;
-                                        font-size: 16px;
-                                    }
-                                
-                                }
-                            
-
-                        .buttons{
-                            display:inline-block;  
-                            display:flex;
-                            
-                                
-                                .play{
-                                    color:white;
-                                    font-size: 21px;
-                                    background: rgba(157, 151, 151, 0.541521);
-                                    border:none;
-                                    border-radius: 9px;
-                                    padding:1rem; 
-                                    font-weight: normal;
-                                    margin-right:1rem;
-                                    width:10rem;
-                                    text-align:center;
-                                }
-
-
-                                .list{
-                                    text-decoration: none;
-                                    color:white;
-                                    font-size: 21px;
-                                    background: rgba(157, 151, 151, 0.541521);
-                                    border:none;
-                                    border-radius: 9px;
-                                    padding:1rem; 
-                                    font-weight: normal;
-                                    margin-right:1rem;
-                                    width:10rem;
-                                    text-align:center;
-                                }
-
-                            }
-
-                                @media (max-width: 600px) {
-                                    .buttons{
-                                   
-                                    
-                                    .play{
-                                        font-family: Open Sans;
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        font-size:16px;
-                                        color: #FFFFFF;
-                                        background: #ED0A1D;
-                                        border-radius: 3px;
-                                        margin-right:0.3rem;
-                                        width:131px;
-                        
-                                        border:none;
-                                    }
-                                    .list{
-                               
-                                        font-family: Open Sans;
-                                        font-style: normal;
-                                        font-weight: normal;
-                                        font-size:16px;
-                                        color: #FFFFFF;
-                                        text-decoration:none;
-                                        background: rgba(157, 151, 151, 0.541521);
-                                        border-radius: 3px;
-                                        width:131px;
-                                        text-align:center;
-                                        
-                                    }
-
-                                }
-
-                        .look{
-                            display: inline-block;
-                            margin: 0.5rem 0rem;
-                            font-weight: normal;
-                        }
-                            @media (max-width: 600px) {
-                                .look{
-                                    display:none;
-                                }
-                              
-                            }
-                        
-
-                        .description{
-                            font-weight: normal;
-                        }
-                            @media (max-width: 600px) {
-                                .description{
-                                    display:none;
-                                }
-                              
-                            }
-                            
-                        
-
+        .text{
+            display:flex;
+            display:inline-block;
+            margin-top:5rem;
+            margin-bottom: 2rem;
+            text-align:start;
+            color: #FFFFFF;
+            width: 100%;
+            max-width:50%;
+            .original{
+                display:inline-block;
+                margin-top: 9rem;
+                font-weight:700;
+                font-size:1.5rem;
+                margin-bottom: 0.5rem;
+            }
+                @media (max-width: 600px) {
+                    .original{
+                        display:none;
+                    }
+                    
                 }
-
-              
+            .title{
+                font-size:7.5rem;
+                text-decoration: none;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+                @media (max-width: 600px) {
+                    .title{
+                        font-size: 24px;
+                    }  
+                }
+            .sub-title-mobile{
+                display:none;  
+            }
+                @media (max-width: 600px) {
+                    .sub-title-mobile{
+                        font-style: normal;
+                        font-weight: normal;
+                        display:flex;
+                        font-size: 16px;
+                    }        
+                }
+            .buttons{
+                display:inline-block;  
+                display:flex;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                .play{
+                    color:white;
+                    font-size: 21px;
+                    background: rgba(157, 151, 151, 0.541521);
+                    border:none;
+                    border-radius: 9px;
+                    padding:1rem; 
+                    margin-right:1rem;
+                    width:10rem;
+                    text-align:center;
+                }
+                .list{
+                    text-decoration: none;
+                    color:white;
+                    font-size: 21px;
+                    background: rgba(157, 151, 151, 0.541521);
+                    border-radius: 9px;
+                    padding:1rem; 
+                    width:10rem;
+                    text-align:center;
+                }
+            }
+                @media (max-width: 600px) {
+                    .buttons{     
+                        .play{
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size:16px;
+                            color: #FFFFFF;
+                            background: #ED0A1D;
+                            border-radius: 3px;
+                            margin-right:0.3rem;
+                            width:131px;
+                            border:none;
+                        }
+                        .list{
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size:16px;
+                            color: #FFFFFF;
+                            text-decoration:none;
+                            background: rgba(157, 151, 151, 0.541521);
+                            border-radius: 3px;
+                            width:131px;
+                            text-align:center;       
+                        }
+                    }
+                }
+            .look{
+                display: inline-block;
+                margin: 0.5rem 0rem;
+                font-weight: normal;
+            }
+                @media (max-width: 600px) {
+                    .look{
+                        display:none;
+                    }   
+                }
+            .description{
+                font-weight: normal;
+            }
+                @media (max-width: 600px) {
+                    .description{
+                    display:none;
+                    }
+                }
+        }          
     }
-
-        
-    
-
 }
 
-}
