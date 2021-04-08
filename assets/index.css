@@ -52,19 +52,40 @@ table {
 .bar {
   display: flex;
   min-height: 4rem;
-  background: rgba(0, 0, 0, 0.801218);
+  background-color: black;
   position: fixed;
   width: 100%;
   white-space: nowrap;
   z-index: 20;
+  padding-left: 4rem;
 }
-.bar .hamburguesa {
+.bar .button-burger {
+  background-color: black;
+  margin-right: 1rem;
+  border: none;
   display: none;
+  padding: 0;
+}
+.bar .button-burger .fa-bars {
+  color: white;
+}
+@media (max-width: 600px) {
+  .bar .button-burger {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+  }
+}
+@media (max-width: 600px) {
+  .bar {
+    display: inline-flex;
+    padding-left: 1rem;
+  }
 }
 .bar .logo {
   min-width: 8rem;
   max-height: 2rem;
-  margin-left: 4rem;
   margin-top: 1rem;
   margin-right: 2rem;
   display: inline-block;
@@ -73,37 +94,58 @@ table {
 .bar .logo:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 600px) {
-  .bar .hamburguesa {
-    margin-left: 1rem;
-    display: flex;
-    width: 35px;
-  }
-  .bar .logo {
-    margin-left: 1.3rem;
-  }
-}
 .bar .bar-words {
-  font-size: 1.2rem;
   margin-top: 1.4rem;
 }
 .bar .bar-words .words {
   display: flex;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  background-color: black;
 }
 .bar .bar-words .words .word {
   margin-right: 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
-}
-.bar .bar-words .words .word:hover {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 600px) {
   .bar .bar-words {
     display: none;
   }
+}
+.bar .mobile-nav {
+  display: none;
+}
+.bar .mobile-nav .column {
+  position: absolute;
+  top: 100%;
+  left: 0rem;
+  padding-left: 1rem;
+  width: 16rem;
+  height: 100vh;
+  flex-direction: column;
+  background-color: black;
+}
+.bar .mobile-nav .column .link-column {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.bar .mobile-nav .column .link-column .linkcc {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.bar .mobile-nav .column .link-column .linkc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.bar .mobile-nav.open {
+  display: inline-flex;
 }
 
 .box .wrap .series {
@@ -120,6 +162,10 @@ table {
 .box .wrap .selector {
   display: flex;
   overflow-x: auto;
+  scrollbar-width: none;
+}
+.box .wrap .selector .serie {
+  margin-right: 1rem;
 }
 .box .wrapper .serie {
   display: inline-block;
@@ -131,10 +177,12 @@ table {
 .box .wrapper .sel {
   display: flex;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 .box .wrapper .sel .selec {
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
 }
 .box .wrapper .sel .selec .porcentage {
   margin: 0 auto;
@@ -151,29 +199,17 @@ table {
 }
 
 .cover-page {
-  background-image: url("/img/portaD.png");
+  background-color: black;
+  background-image: url("../img/portada.png");
   background-size: cover;
   height: 53rem;
   width: 100%;
-}
-@media (max-width: 600px) {
-  .cover-page .cover-page {
-    background-image: url("/img/portada.jpg");
-    background-size: cover;
-    height: 344px;
-    width: 100%;
-  }
 }
 .cover-page .page {
   text-decoration: none;
   margin-left: 4rem;
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 600px) {
-  .cover-page .page .cover-page {
-    margin-left: 0.2rem;
-  }
 }
 .cover-page .page .text {
   display: flex;
@@ -190,7 +226,7 @@ table {
   margin-top: 9rem;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.3rem;
 }
 @media (max-width: 600px) {
   .cover-page .page .text .original {
@@ -205,7 +241,9 @@ table {
 }
 @media (max-width: 600px) {
   .cover-page .page .text .title {
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
   }
 }
 .cover-page .page .text .sub-title-mobile {
@@ -216,7 +254,8 @@ table {
     font-style: normal;
     font-weight: normal;
     display: flex;
-    font-size: 16px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .cover-page .page .text .buttons {
@@ -227,11 +266,11 @@ table {
 }
 .cover-page .page .text .buttons .play {
   color: white;
-  font-size: 21px;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
   background: rgba(157, 151, 151, 0.541521);
   border: none;
   border-radius: 9px;
-  padding: 1rem;
   margin-right: 1rem;
   width: 10rem;
   text-align: center;
@@ -239,19 +278,18 @@ table {
 .cover-page .page .text .buttons .list {
   text-decoration: none;
   color: white;
-  font-size: 21px;
+  font-size: 1.4rem;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
   padding: 1rem;
   width: 10rem;
   text-align: center;
+  white-space: nowrap;
 }
 @media (max-width: 600px) {
   .cover-page .page .text .buttons .play {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 1rem;
     color: #FFFFFF;
     background: #ED0A1D;
     border-radius: 3px;
@@ -260,10 +298,8 @@ table {
     border: none;
   }
   .cover-page .page .text .buttons .list {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 1rem;
     color: #FFFFFF;
     text-decoration: none;
     background: rgba(157, 151, 151, 0.541521);
@@ -283,14 +319,27 @@ table {
   }
 }
 .cover-page .page .text .description {
-  font-weight: normal;
+  font-weight: 400;
+  line-height: 25px;
 }
 @media (max-width: 600px) {
   .cover-page .page .text .description {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .cover-page .page {
+    margin-left: 1rem;
+  }
+}
 
+@media (max-width: 600px) {
+  .cover-page {
+    background-size: cover;
+    height: 344px;
+    width: 100%;
+  }
+}
 *, *:after, *:before {
   box-sizing: border-box;
 }
@@ -301,9 +350,9 @@ table {
 .html .body {
   margin: 0rem;
   background-color: black;
+  font-family: "Open Sans", sans-serif;
 }
 .html .body .main {
-  font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
 }
 

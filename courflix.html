@@ -1,13 +1,16 @@
 <html class="html">
     <head>
         <title>courflix</title>
-        <link rel="stylesheet" href="./assets/index.css">   
+        <script src="https://kit.fontawesome.com/76fe7be4a1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/index.css">  
+        
+
     </head>
 
     <body class="body">
         <div class="main">
             <header class="bar">
-                <a class="logo" href="#"><img src="img/Bitmap.png"></a>
+                <button class="button-burger js-burger"><i class="fas fa-bars"></i></button><a class="logo" href="#"><img src="img/Bitmap.png"></a>
                 <nav class="bar-words">
                     <ul class="words">
                         <li class="link-wrapper"><a class="word" href="#cover">Inicio</a></li>
@@ -16,7 +19,16 @@
                         <li class="link-wrapper"><a class="word" href="#add">Agregados recientemente</a></li>
                         <li class="link-wrapper"><a class="word" href="#">Mi lista</a></li>
                     </ul>
-                </nav>   
+                </nav>  
+                <nav class="mobile-nav  js-nav ">
+                    <ul class="column  js-menu">
+                        <li class="link-column"><a class="linkcc" href="#cover">Inicio</a></li>
+                        <li class="link-column"><a class="linkc" href="#s">Series</a></li>
+                        <li class="link-column"><a class="linkc" href="#">Peliculas</a></li>
+                        <li class="link-column"><a class="linkc" href="#add">Agregados recientemente</a></li>
+                        <li class="link-column"><a class="linkc" href="#">Mi lista</a></li>
+                    </ul>
+                </nav> 
             </header >
 
             <div class="cover-page" id="cover">
@@ -34,83 +46,68 @@
                     </div >
                     
                     <div class="box">
-                        <div class="wrap">
-                            <span class="series" id="s">Series</span>
-                            <div class="selector" >        
+                        <div class="wrap" id="s">
+                            <span class="series" >Series</span>
+                            <div class="selector dragscroll" >        
                                 <div class="serie a">
-                                <a class="im" href="detalle.html"><img  src="img/theEleven.jpg" alt="theEleven"></a>
+                                    <a href="detalle.html"><img  src="img/theEleven.jpg" alt="theEleven"></a>
                                 </div>
                                 <div class="serie b">
-                                <a class="im" href="detalle.html"><img  src="img/lucifer.jpg" alt="lucifer"></a>
+                                    <a href="detalle.html"><img  src="img/lucifer.jpg" alt="lucifer"></a>
                                 </div>
                                 <div class="serie c">
-                                <a class="im" href="detalle.html"><img  src="img/theProtector.jpg" alt="theProtector"></a>
+                                    <a href="detalle.html"><img  src="img/theProtector.jpg" alt="theProtector"></a>
                                 </div>
                                 <div class="serie d">
-                                <a class="im" href="detalle.html"><img src="img/robot.jpg" alt="robot"></a>
+                                    <a href="detalle.html"><img src="img/robot.jpg" alt="robot"></a>
                                 </div>
                             </div>
                         </div>
                 
                         <div class="wrapper">
                             <span class="serie">Seguir viendo contenido del tucu</span>
-                            <div class="sel">
+                            <div class="sel dragscroll">
                                 <div class="selec">
-                                    <a class="im" href="detalle.html"><img  src="img/vikingos.jpg" alt="vikingos"></a>
+                                    <a href="detalle.html"><img  src="img/vikingos.jpg" alt="vikingos"></a>
                                     <div class="porcentage" ><div style="width:80%" class="red"></div></div>
                                 </div>
                                 <div class="selec">
-                                    <a class="im" href="detalle.html"><img  src="img/dark.jpg" alt="dark"></a>
+                                    <a href="detalle.html"><img  src="img/dark.jpg" alt="dark"></a>
                                     <div class="porcentage"><div style="width:40%" class="red"></div></div>
                                 </div>
                                 <div class="selec">
-                                    <a class="im" href="detalle.html"><img src="img/laOrdenSecreta.jpg" alt="laOrdenSecreta"></a>
+                                    <a href="detalle.html"><img src="img/laOrdenSecreta.jpg" alt="laOrdenSecreta"></a>
                                     <div class="porcentage"><div style="width:10%" class="red"></div></div>
                                 </div>
                                 <div class="selec">
-                                    <a class="im" href="detalle.html"><img src="img/theEndOfThe.jpg" alt="theEndOfThe"></a>
+                                    <a href="detalle.html"><img src="img/theEndOfThe.jpg" alt="theEndOfThe"></a>
                                     <div class="porcentage"><div class="red"></div></div>
                                 </div>
                             </div>  
                         </div>
 
-                        <div class="wrap">
-                            <span class="series" id="add">Agregados recientemente</span>
-                            <div class="selector" >
+                        <div class="wrap" id="add">
+                            <span class="series">Agregados recientemente</span>
+                            <div class="selector dragscroll" >
                                 <div class="serie">
-                                <a class="im" href="detalle.html">
-                                <img  src="img/arrow.jpg" alt="arrow">
-                                </a>
+                                    <a  href="detalle.html"><img src="img/arrow.jpg" alt="arrow"></a>
                                 </div>
-                                
                                 <div class="serie">
-                                <a  class="im" href="detalle.html">
-                                <img  src="img/theFlash.jpg" alt="flash">
-                                </a>
+                                    <a  href="detalle.html"><img src="img/theFlash.jpg" alt="theFlash"></a>
                                 </div>
-
                                 <div class="serie">
-                                <a class="im" href="detalle.html">
-                                <img  src="img/theEleven.jpg" alt="theEleven">
-                                </a>
+                                    <a  href="detalle.html"><img  src="img/theEleven.jpg" alt="theEleven"></a>
                                 </div>
-
                                 <div class="serie">
-                                <a class="im" href="detalle.html">
-                                <img  src="img/lucifer.jpg" alt="lucifer">
-                                </a>
-                                </div>
-                                
+                                    <a href="detalle.html"><img  src="img/lucifer.jpg" alt="lucifer"></a>
+                                </div>   
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-        <script src="./courflix.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
+        <script src="courflix.js"></script>
     </body>
 </html>

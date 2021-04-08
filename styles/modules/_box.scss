@@ -12,9 +12,9 @@
         .selector{  
             display:flex;
             overflow-x:auto;  
-            //scroll-snap-type: x mandatory;
-            .serie a{
-                //scroll-snap-align: center;
+            scrollbar-width: none;
+            .serie{
+                margin-right: 1rem;
             }
         }
     }
@@ -29,14 +29,12 @@
         }
         .sel{
             display:flex;  
-            overflow-x:auto;                    
+            overflow-x:auto;
+            scrollbar-width: none;                    
             .selec{
                 display:flex;
-                flex-direction: column;        
-                .im{                        
-                    //margin-right:1rem;                       
-                }    
-               
+                flex-direction: column;  
+                margin-right: 1rem;      
                 .porcentage{ 
                     margin: 0 auto;
                     margin-top: 1rem;

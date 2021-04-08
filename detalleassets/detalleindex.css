@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,10 +73,10 @@ table {
 .bar .bar-words {
   font-size: 1.2rem;
 }
-.bar .bar-words ul {
+.bar .bar-words .words {
   display: flex;
 }
-.bar .bar-words ul .word {
+.bar .bar-words .words .word {
   display: inline-block;
   margin-right: 1rem;
   margin-top: 1.4rem;
@@ -85,12 +85,12 @@ table {
   color: #FFFFFF;
   text-decoration: none;
 }
-.bar .bar-words ul .word:hover {
+.bar .bar-words .words .word:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .cover-page {
-  background-image: url("file://magui/Users/magali/tp-courseit/img/breakingbad04.png");
+  background-image: url("");
   background-size: cover;
   height: 53rem;
   width: 100%;
@@ -114,89 +114,79 @@ table {
   width: 21.56rem;
   height: 21.56rem;
 }
-.cover-page .page .text .porcentage {
+.cover-page .page .text .statistics {
   display: inline-block;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1rem;
-  font-family: Open Sans;
   margin-bottom: 1rem;
 }
-.cover-page .page .text .porcentage .coincidence {
-  font-weight: bold;
+.cover-page .page .text .statistics .coincidence {
+  margin-right: 1rem;
+  font-weight: 700;
   color: #009C04;
 }
-.cover-page .page .text .porcentage .year {
-  margin-left: 0.5rem;
+.cover-page .page .text .statistics .year {
+  margin-right: 1rem;
+  font-weight: 400;
 }
-.cover-page .page .text .porcentage .adult {
+.cover-page .page .text .statistics .adult {
+  margin-right: 1rem;
+  font-weight: 400;
   display: inline-block;
-  padding: 0.3rem;
+  padding: 0.3rem 0.5rem;
   border: 1px solid white;
   border-radius: 8px;
 }
-.cover-page .page .text .porcentage .season {
-  font-weight: bold;
+.cover-page .page .text .statistics .season {
+  font-weight: 700;
   color: #FFFFFF;
 }
 .cover-page .page .text .buttons {
   display: inline-block;
   display: flex;
-  margin-bottom: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 .cover-page .page .text .buttons .play {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3rem;
-  color: #FFFFFF;
-  background: #ED0A1D;
-  border-radius: 9px;
-  margin-right: 1rem;
-  width: 10rem;
+  color: white;
+  font-size: 21px;
+  background: red;
   border: none;
-}
-.cover-page .page .text .buttons .list {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.3rem;
-  color: #FFFFFF;
-  text-decoration: none;
-  background: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
+  padding: 1rem;
+  margin-right: 1rem;
   width: 10rem;
   text-align: center;
 }
-.cover-page .page .text .description {
-  font-weight: normal;
-  line-height: 25px;
+.cover-page .page .text .buttons .list {
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  background: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
 }
-.cover-page .page .text .hand {
-  width: 59px;
-  height: 59px;
-  border: 2px solid #D8D8D8;
-  background: #D8D8D8;
+.cover-page .page .text .buttons .hand {
+  margin-left: 1rem;
+}
+.cover-page .page .text .description {
+  font-weight: 400;
+  line-height: 25px;
 }
 .cover-page .page .box .wrap .series {
   display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .cover-page .page .box .wrap .selector {
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   margin-bottom: 3.5rem;
+  scrollbar-width: none;
 }
-.cover-page .page .box .wrap .selector::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-.cover-page .page .box .wrap .selector .img {
-  scroll-snap-align: start;
+.cover-page .page .box .wrap .selector .serie {
   margin-right: 1rem;
 }
 
@@ -213,7 +203,6 @@ table {
 }
 .html .body .main {
   font-family: "Open Sans", sans-serif;
-  font-weight: bold;
   color: #FFFFFF;
 }
 
