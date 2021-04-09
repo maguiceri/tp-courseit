@@ -8,7 +8,6 @@
     width: 100%;
 
     .page{
-        text-decoration: none;
         margin-left:4rem;
         display:flex;
         flex-direction: column;
@@ -16,7 +15,7 @@
         .text{
             display:flex;
             display:inline-block;
-            margin-top:5rem;
+            margin-top:14rem;
             margin-bottom: 2rem;
             text-align:start;
             color: #FFFFFF;
@@ -24,7 +23,6 @@
             max-width:50%;
             .original{
                 display:inline-block;
-                margin-top: 9rem;
                 font-weight:700;
                 font-size:1.5rem;
                 margin-bottom: 1.3rem;
@@ -36,15 +34,14 @@
                 }
             .title{
                 font-size:7.5rem;
-                text-decoration: none;
                 font-weight: 700;
                 margin-bottom: 1rem;
             }
                 @media (max-width: 600px) {
                     .title{
                         font-size: 1.5rem;
-                        margin-top: 6rem;
-                        margin-bottom: 0rem;   
+                        margin-top: -6rem;
+                        margin-bottom:0rem;
                     }  
                 }
             .sub-title-mobile{
@@ -52,11 +49,9 @@
             }
                 @media (max-width: 600px) {
                     .sub-title-mobile{
-                        font-style: normal;
-                        font-weight: normal;
                         display:flex;
                         font-size: 1rem;
-                        margin-bottom: 1rem;
+                        margin-bottom:1rem;
                     }        
                 }
             .buttons{

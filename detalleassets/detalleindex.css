@@ -51,24 +51,18 @@ table {
 
 .bar {
   display: flex;
+  align-items: center;
   min-height: 4rem;
-  background: rgba(0, 0, 0, 0.801218);
+  background: black;
   position: fixed;
   width: 100%;
   white-space: nowrap;
   z-index: 20;
 }
 .bar .logo {
-  min-width: 8rem;
-  max-height: 2rem;
   margin-left: 4rem;
-  margin-top: 1rem;
   margin-right: 2rem;
   display: inline-block;
-  text-decoration: none;
-}
-.bar .logo:hover {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 .bar .bar-words {
   font-size: 1.2rem;
@@ -79,24 +73,19 @@ table {
 .bar .bar-words .words .word {
   display: inline-block;
   margin-right: 1rem;
-  margin-top: 1.4rem;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #FFFFFF;
   text-decoration: none;
 }
-.bar .bar-words .words .word:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
 .cover-page {
-  background-image: url("");
+  background-image: url("../img/breakingbad04.png");
   background-size: cover;
   height: 53rem;
   width: 100%;
 }
 .cover-page .page {
-  text-decoration: none;
   margin-left: 4rem;
   display: flex;
   flex-direction: column;
@@ -108,6 +97,7 @@ table {
   margin-bottom: 2rem;
   text-align: start;
   color: #FFFFFF;
+  width: 100%;
   max-width: 50%;
 }
 .cover-page .page .text .im {
@@ -139,6 +129,7 @@ table {
 .cover-page .page .text .statistics .season {
   font-weight: 700;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 .cover-page .page .text .buttons {
   display: inline-block;
@@ -148,8 +139,8 @@ table {
 }
 .cover-page .page .text .buttons .play {
   color: white;
-  font-size: 21px;
-  background: red;
+  font-size: 1.4rem;
+  background: #ED0A1D;
   border: none;
   border-radius: 9px;
   padding: 1rem;
@@ -160,12 +151,13 @@ table {
 .cover-page .page .text .buttons .list {
   text-decoration: none;
   color: white;
-  font-size: 21px;
+  font-size: 1.4rem;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
   padding: 1rem;
   width: 10rem;
   text-align: center;
+  white-space: nowrap;
 }
 .cover-page .page .text .buttons .hand {
   margin-left: 1rem;

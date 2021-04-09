@@ -1,5 +1,6 @@
 .bar{
     display:flex;
+    align-items: center;
     min-height: 4rem;
     background-color:black;
     position:fixed;
@@ -8,13 +9,14 @@
     z-index:20;
     padding-left:4rem;
     .button-burger{
+        display: none;
         background-color:black;
         margin-right:1rem;
         border:none;
-        display: none;
         padding:0;
         .fa-bars{
-            color: white;      
+            color: white;  
+             
         }
             @media (max-width: 600px){             
             font-size: 3rem;
@@ -29,20 +31,11 @@
         }
 
     .logo{
-        min-width: 8rem;
-        max-height: 2rem;
-        margin-top: 1rem;
         margin-right: 2rem;
         display:inline-block;
-        text-decoration:none;
-        &:hover{
-            background-color: rgba(0, 0, 0, 0.2);
-        }
     }
     
     .bar-words{
-        //font-size: 1.2rem;
-        margin-top: 1.4rem;
         .words{
             display:flex;
             font-weight: 400;
@@ -77,29 +70,22 @@
                 margin-top: 1rem;
                 margin-bottom: 0.5rem;
                 .linkcc{
-                font-size: 18px;
                 font-weight:700;
                 color: #FFFFFF;
                 text-decoration:none;
                 
                 }
                 .linkc{
-                font-size: 18px;
                 font-weight:400;
                 color: #FFFFFF;
                 text-decoration:none;
-                }
-                
-            }
-           
-            
+                }           
+            }         
         }
         &.open{
             display:inline-flex;
-        }
-        
+        }       
     }
-
 }
 
 

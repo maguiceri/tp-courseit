@@ -1,11 +1,10 @@
 
 .cover-page{
-    background-image:url("");
+    background-image:url("../img/breakingbad04.png");
     background-size:cover;
     height: 53rem;
     width: 100%;   
     .page{
-        text-decoration: none;
         margin-left:4rem;
         display:flex;
         flex-direction: column;
@@ -16,7 +15,9 @@
             margin-bottom: 2rem;
             text-align:start;
             color: #FFFFFF;
+            width: 100%;
             max-width:50%;
+           
             .im{
                 width: 21.56rem;
                 height: 21.56rem;
@@ -46,6 +47,8 @@
                 .season{
                     font-weight: 700;
                     color: #FFFFFF;
+                    white-space: nowrap; 
+                    
                 }
             }
 
@@ -74,6 +77,7 @@
                     padding:1rem; 
                     width:10rem;
                     text-align:center;
+                    white-space: nowrap; 
                 }
                 .hand{
                     margin-left: 1rem;
