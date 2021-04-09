@@ -295,7 +295,6 @@ table {
 .cover-page .page .text .look {
   display: inline-block;
   margin: 0.5rem 0rem;
-  font-weight: normal;
 }
 @media (max-width: 600px) {
   .cover-page .page .text .look {
