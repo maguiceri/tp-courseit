@@ -1,5 +1,9 @@
 .box{
-    .wrap{    
+    .wrap{  
+        .hyperlink{
+            position: relative;
+            bottom: 4rem;
+        }  
         .series{
             display:inline-block;
             font-weight:700;

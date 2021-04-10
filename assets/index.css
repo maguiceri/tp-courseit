@@ -137,6 +137,10 @@ table {
   display: inline-flex;
 }
 
+.box .wrap .hyperlink {
+  position: relative;
+  bottom: 4rem;
+}
 .box .wrap .series {
   display: inline-block;
   font-weight: 700;

@@ -1,11 +1,22 @@
 const menuButton = document.querySelector(".js-burger");
 const nav = document.querySelector(".js-nav");
 
-console.log(menuButton);
-console.log(nav);
+menuButton.onclick = toggleMenu;
 
+menuButton.onclick = function(e) {
+  e.stopPropagation();
+  toggleMenu()
+}
 
-menuButton.onclick = function () {
+nav.onclick = function (e) {
+  e.stopPropagation();
+}
+ 
+document.body.onclick = function () {
+  nav.classList.remove("open");
+}
+
+function toggleMenu() {
   console.log("click");
   if(nav.classList.contains("open")) {
     nav.classList.remove("open");
@@ -13,3 +24,4 @@ menuButton.onclick = function () {
     nav.classList.add("open");
   }
 }
+
