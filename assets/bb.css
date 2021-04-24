@@ -287,63 +287,39 @@ body .main {
     width: 100%;
   }
 }
-.box .wrap .hyperlink {
-  position: relative;
-  bottom: 4rem;
+.title.breaking {
+  padding-bottom: 0.5rem;
 }
-.box .wrap .series {
+
+.box {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: 20px 0px 40px 0px black;
+}
+.box .season {
   display: inline-block;
   font-weight: 700;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.box .episode {
+  display: flex;
+  color: white;
   margin-bottom: 1rem;
 }
-@media (max-width: 600px) {
-  .box .wrap .series {
-    font-size: 18px;
-  }
-}
-.box .wrap .selector {
-  display: flex;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.box .wrap .selector .serie {
+.box .episode .img {
   margin-right: 1rem;
 }
-
-.wrapper .serie {
-  display: inline-block;
+.box .episode .description .description-title {
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  display: inline-block;
+  margin-bottom: 0.7rem;
 }
-.wrapper .sel {
-  display: flex;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.wrapper .sel .selec {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1rem;
-}
-.wrapper .sel .selec .porcentage {
-  margin: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 15rem;
-  height: 0.5rem;
-  background-color: gray;
-}
-.wrapper .sel .selec .porcentage .red {
-  width: 15rem;
-  height: 0.5rem;
-  background-color: red;
+.box .episode .description .description-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.3rem;
 }
 
-.html {
-  scroll-behavior: smooth;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=bb.css.map */

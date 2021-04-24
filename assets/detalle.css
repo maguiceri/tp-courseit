@@ -49,34 +49,133 @@ table {
   border-spacing: 0;
 }
 
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+}
+body .main {
+  color: #FFFFFF;
+}
+
 .bar {
   display: flex;
   align-items: center;
   min-height: 4rem;
-  background: black;
+  background-color: black;
   position: fixed;
   width: 100%;
   white-space: nowrap;
   z-index: 20;
+  padding-left: 4rem;
+}
+.bar .button-burger {
+  display: none;
+  background-color: black;
+  margin-right: 1rem;
+  border: none;
+  padding: 0;
+}
+.bar .button-burger .fa-bars {
+  color: white;
+}
+@media (max-width: 600px) {
+  .bar .button-burger {
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+  }
+}
+@media (max-width: 600px) {
+  .bar {
+    display: inline-flex;
+    padding-left: 1rem;
+  }
 }
 .bar .logo {
-  margin-left: 4rem;
   margin-right: 2rem;
   display: inline-block;
 }
-.bar .bar-words {
-  font-size: 1.2rem;
-}
 .bar .bar-words .words {
   display: flex;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  background-color: black;
 }
 .bar .bar-words .words .word {
-  display: inline-block;
   margin-right: 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
+}
+@media (max-width: 600px) {
+  .bar .bar-words {
+    display: none;
+  }
+}
+.bar .mobile-nav {
+  display: none;
+}
+.bar .mobile-nav .column {
+  position: absolute;
+  top: 100%;
+  left: 0rem;
+  padding-left: 1rem;
+  width: 16rem;
+  height: 100vh;
+  flex-direction: column;
+  background-color: black;
+}
+.bar .mobile-nav .column .link-column {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.bar .mobile-nav .column .link-column .linkcc {
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.bar .mobile-nav .column .link-column .linkc {
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.bar .mobile-nav.open {
+  display: inline-flex;
+}
+
+.box .wrap .hyperlink {
+  position: relative;
+  bottom: 4rem;
+}
+.box .wrap .series {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .box .wrap .series {
+    font-size: 18px;
+  }
+}
+.box .wrap .selector {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.box .wrap .selector .serie {
+  margin-right: 1rem;
+}
+
+.html {
+  scroll-behavior: smooth;
 }
 
 .cover-page {
@@ -166,36 +265,5 @@ table {
   font-weight: 400;
   line-height: 25px;
 }
-.cover-page .page .box .wrap .series {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.cover-page .page .box .wrap .selector {
-  display: flex;
-  overflow-x: auto;
-  margin-bottom: 3.5rem;
-  scrollbar-width: none;
-}
-.cover-page .page .box .wrap .selector .serie {
-  margin-right: 1rem;
-}
 
-*, *:after, *:before {
-  box-sizing: border-box;
-}
-
-.html {
-  scroll-behavior: smooth;
-}
-.html .body {
-  margin: 0rem;
-  background-color: black;
-}
-.html .body .main {
-  font-family: "Open Sans", sans-serif;
-  color: #FFFFFF;
-}
-
-/*# sourceMappingURL=detalleindex.css.map */
+/*# sourceMappingURL=detalle.css.map */

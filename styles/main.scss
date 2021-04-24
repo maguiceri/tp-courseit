@@ -1,22 +1,12 @@
 @import"base/reset";
+@import"base/common";
 @import"modules/bar";
 @import"modules/cover-page";
+@import"modules/box";
+@import"modules/wrapper";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
-
-*, *:after, *:before{
-    box-sizing: border-box;
-}
 
 .html{
     scroll-behavior: smooth;
-    .body{
-        margin:0rem;
-        background-color:black;
-        font-family: 'Open Sans', sans-serif;
-        .main{
-            color: #FFFFFF;
-        }
-    }
 }

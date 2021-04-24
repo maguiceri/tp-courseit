@@ -1,4 +1,12 @@
+@import"base/reset";
+@import"base/common";
+@import"modules/bar";
+@import"modules/box";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+.html{
+    scroll-behavior: smooth;
+}
 .cover-page{
     background-image:url("../img/breakingbad04.png");
     background-size:cover;
@@ -89,25 +97,5 @@
             }
 
         }
-
-        .box{    
-            .wrap{         
-                .series{
-                    display:inline-block;
-                    font-weight: 700;
-                    font-size: 1.5rem;
-                    margin-bottom:1rem;            
-                }
-                .selector{
-                    display:flex;
-                    overflow-x:auto;
-                    margin-bottom:3.5rem;
-                    scrollbar-width: none;
-                    .serie{
-                        margin-right: 1rem;
-                    }
-                }      
-            }
-        }             
     }
 }
