@@ -5,12 +5,10 @@
     background-size:cover;
     height: 53rem;
     width: 100%;
-
     .page{
         margin-left:4rem;
         display:flex;
-        flex-direction: column;
-    
+        flex-direction: column;  
         .text{
             display:flex;
             display:inline-block;
@@ -76,9 +74,9 @@
                     font-size: 1.4rem;
                     background: rgba(157, 151, 151, 0.541521);
                     border-radius: 9px;
-                    padding:1rem; 
-                    width:10rem;
+                    width:10rem;                  
                     text-align:center;
+                    padding-top: 1.2rem;
                     white-space: nowrap; 
                 }
             }

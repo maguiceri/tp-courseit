@@ -229,9 +229,9 @@ body .main {
   font-size: 1.4rem;
   background: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
-  padding: 1rem;
   width: 10rem;
   text-align: center;
+  padding-top: 1.2rem;
   white-space: nowrap;
 }
 @media (max-width: 600px) {
@@ -317,6 +317,11 @@ body .main {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 600px) {
+  .wrapper .serie {
+    font-size: 18px;
+  }
 }
 .wrapper .sel {
   display: flex;

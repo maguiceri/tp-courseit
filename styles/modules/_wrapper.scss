@@ -6,6 +6,11 @@
     margin-top: 1rem;
     margin-bottom:1rem;
     }
+    @media (max-width:600px){
+        .serie{
+            font-size: 18px;
+        }
+    }
     .sel{
         display:flex;  
         overflow-x:auto;
